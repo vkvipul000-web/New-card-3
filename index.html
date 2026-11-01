@@ -362,7 +362,7 @@ function stopScratch(){scratching=false}
 cv.addEventListener("pointerup",stopScratch);
 cv.addEventListener("pointercancel",stopScratch);
 
-function rainFlowers(total){const box=document.getElementById("flowers"),icons=["🌸","🌺","🌼","🌷","✦","✨"];for(let i=0;i<total;i++)setTimeout(()=>{const f=document.createElement("span");f.className="flw";f.textContent=icons[i%icons.length];f.style.left=Math.random()*96+"vw";f.style.fontSize=(18+Math.random()*18)+"px";f.style.animationDuration=(3+Math.random()*3)+"s";box.appendChild(f);setTimeout(()=>f.remove(),6500)},i*55)}
+function rainFlowers(total){const box=document.getElementById("flowers"),icons=["❤️","✼","🌹","🌼","🌷","✦","✨"];for(let i=0;i<total;i++)setTimeout(()=>{const f=document.createElement("span");f.className="flw";f.textContent=icons[i%icons.length];f.style.left=Math.random()*96+"vw";f.style.fontSize=(18+Math.random()*18)+"px";f.style.animationDuration=(3+Math.random()*3)+"s";box.appendChild(f);setTimeout(()=>f.remove(),6500)},i*55)}
 document.getElementById("closePop").addEventListener("click",()=>document.getElementById("popup").classList.remove("show"));
 document.getElementById("popup").addEventListener("click",e=>{if(e.target.id==="popup")e.currentTarget.classList.remove("show")});
 
