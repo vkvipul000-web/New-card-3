@@ -247,6 +247,7 @@ document.getElementById("popup").addEventListener("click",e=>{if(e.target.id==="
 
 document.getElementById("shareBtn").addEventListener("click",()=>{const txt="Wedding Invitation 💌\nMd. Sarfraj Ansari ♥ Rajiya Khatoon\nNikah: 24 December 2026\nReception & Walima: 25 December 2026, 7:00 PM\nVenue: Royal Garden, Ghazipur, Uttar Pradesh\n\nOpen the invitation: "+location.href;window.open("https://wa.me/?text="+encodeURIComponent(txt),"_blank","noopener")});
 document.getElementById("calBtn").addEventListener("click",()=>{const ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Wedding Invitation//EN","CALSCALE:GREGORIAN","BEGIN:VEVENT","DTSTART:20261224T143000Z","DTEND:20261224T173000Z","SUMMARY:Wedding - Sarfraj and Rajiya","LOCATION:Royal Garden, Ghazipur, Uttar Pradesh","DESCRIPTION:Nikah celebration","END:VEVENT","BEGIN:VEVENT","DTSTART:20261225T133000Z","DTEND:20261225T153000Z","SUMMARY:Reception and Walima - Sarfraj and Rajiya","LOCATION:Royal Garden, Ghazipur, Uttar Pradesh","END:VEVENT","END:VCALENDAR"].join("\r\n");const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([ics],{type:"text/calendar;charset=utf-8"}));a.download="Sarfraj-Rajiya-Wedding.ics";a.click();URL.revokeObjectURL(a.href)});
+document.getElementById("wedAudio").play();
 </script>
 </body>
 </html>
